@@ -2,7 +2,7 @@
 
 ## Project Discription
 
-This is an app that displays weather information regarding a specified city. Users can search for a specific city. The structured with the routing of Next.js
+This is an app that displays weather information regarding a specified city. Users can search for a specific city. The structured with the routing of Next.js.
 
 ## Built with
 
@@ -43,6 +43,14 @@ npm install
 npm run dev
 ```
 6. The project should now open
+
+## Run tests
+
+Run tests with
+
+```
+npm test
+```
 
 ## Author
 
