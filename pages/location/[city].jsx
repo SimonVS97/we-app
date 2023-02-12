@@ -86,12 +86,12 @@ export default function City(props) {
               <Typography variant='h6'>{wDay}, the {day}.{month}.{year} at {hours}:{minutes}</Typography>
               <Grid container>
                 <Grid item xs={6} sm={6}>
-                  <Typography>Daily high: {Math.round(props.weatherData.main.temp_min)} °C</Typography>
+                  <Typography>Daily high: {Math.round(props.weatherData.main.temp_max)} °C</Typography>
                   <Typography>Temperatur felt: {Math.round(props.weatherData.main.feels_like)} °C</Typography>
                   <Typography>Humidity:  {props.weatherData.main.humidity} %</Typography>
                 </Grid>
                 <Grid item xs={6} sm={6}>
-                  <Typography>Daily low: {Math.round(props.weatherData.main.temp_max)} °C</Typography>
+                  <Typography>Daily low: {Math.round(props.weatherData.main.temp_min)} °C</Typography>
                   <Typography>Windspeed: {windSpeed} km/h</Typography>
                   {props.weatherData.wind.gust ? <Typography>Gust: {props.weatherData.wind.gust} meter/sec</Typography> : <span></span>}
                 </Grid>
