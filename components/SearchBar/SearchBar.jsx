@@ -49,7 +49,10 @@ export default function SearchBar() {
       <Grid container >
         <Grid item xs={0} sm={0} md={1} lg={2} ></Grid>
         <Grid item xs={12} sm={12} md={10} lg={8} display="flex" justifyContent="center" alignItems="center" >
-          <TextField placeholder="Please type in your city" type="text" value={query} onChange={handleChange} style={{ width: "100%" }} className="SearchBar"></TextField>
+          <TextField placeholder="Please type in your city" type="text"
+            value={query} onChange={handleChange} style={{ width: "100%" }} className="SearchBar"
+            data-testid="txtField"
+          ></TextField>
         </Grid>
         <Grid item xs={0} sm={0} md={1} lg={2}></Grid>
         <Grid item xs={0} sm={0} md={1} lg={2}></Grid>
@@ -58,7 +61,7 @@ export default function SearchBar() {
             <List display="flex" style={{ border: "solid", borderColor: blue[500], borderRadius: "10px" }}>
               {results.map((result, index) => {
                 return <ListItem key={index} style={{ textAlign: "center", display: "inline-block" }} >
-                  <Link href={`/location/${result.id}`} style={{ textDecoration: "none", color: "black" }}>
+                  <Link href={`/location/${result.id}`} style={{ textDecoration: "none", color: "black" }} >
                     {result.name},
                     {<span> ({result.country})</span>}
                   </Link>
