@@ -87,7 +87,7 @@ export default function City(props) {
               <Grid container>
                 <Grid item xs={6} sm={6}>
                   <Typography>Daily high: {Math.round(props.weatherData.main.temp_max)} °C</Typography>
-                  <Typography>Temperatur felt: {Math.round(props.weatherData.main.feels_like)} °C</Typography>
+                  <Typography>Temperature felt: {Math.round(props.weatherData.main.feels_like)} °C</Typography>
                   <Typography>Humidity:  {props.weatherData.main.humidity} %</Typography>
                 </Grid>
                 <Grid item xs={6} sm={6}>
