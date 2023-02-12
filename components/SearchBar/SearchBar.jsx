@@ -29,7 +29,7 @@ export default function SearchBar() {
     let matchingCities;
     if (value.length > 0) {
       matchingCities = cities.filter((city => {
-        return city.name.includes(value);
+        return city.name.toLowerCase().includes(value.toLowerCase());
       }));
       // pass first 5 cities that match query to setResults
       setResults(matchingCities.slice(0, 5));
