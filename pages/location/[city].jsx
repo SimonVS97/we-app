@@ -7,10 +7,6 @@ import { blue } from '@mui/material/colors';
 import Grid from '@mui/material/Grid';
 import SearchBar from '../../components/SearchBar/SearchBar';
 
-
-
-
-
 // weather data can change
 // that's why getServerSideProps, so the page is pre-rendered with every request
 // dynamic route, params contains id of city

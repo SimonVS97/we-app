@@ -2,18 +2,14 @@
 import cities from '../../lib/cities.json';
 import React from "react";
 import Link from "next/link";
-import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import './SearchBar.module.scss';
 import { blue } from '@mui/material/colors';
 import Divider from '@mui/material/Divider';
 import { useRouter } from 'next/router'
-
-
 
 export default function SearchBar() {
   // query variable contains string typed in by the user
