@@ -38,7 +38,7 @@ This is an app that displays weather information regarding a specified city. Use
 ```
 npm install
 ```
-5. Run ist with:
+5. Run ist with
 ```
 npm run dev
 ```
