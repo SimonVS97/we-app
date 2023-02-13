@@ -20,7 +20,7 @@ export async function getServerSideProps(context) {
     }
   }
   // use API key to make a fetch request to weather API
-  let key = 'cb54f5c4b9ed3a79afce0db092e6d0ea';
+  let key = process.env.REACT_APP_WEATHER_API_KEY;
   const res = await fetch(
     `https://api.openweathermap.org/data/2.5/weather?lat=${cityData.coord.lat}&lon=${cityData.coord.lon}&appid=${key}&units=metric`
   );
